@@ -11,3 +11,6 @@ type: ./main
 3) 
 follow the console output as you use the program
 
+
+DOXYGEN
+the doxygen html can also be generated using the command 'doxygen config', which is a part of the system folder
