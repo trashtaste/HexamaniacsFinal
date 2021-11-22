@@ -6,7 +6,7 @@ OBJECTS = VacuumMerlinEngineFactory.o VacuumMerlinEngine.o testSimulation.o Stat
  					StarlinkSatellite.o Stage.o SpaceShip.o simulation.o SatelliteCluster.o Satellite.o rocketPayload.o RocketFactory.o\
   				Rocket.o radioMessage.o payloadItems.o payload.o MerlinEngineFactory.o MerlinEngine.o Memento.o launchSimulation.o\
 	 				laserMessage.o ISSObservationRoom.o ISS.o Ground.o FalconHeavyRocketFactory.o FalconHeavyRocket.o Falcon9RocketFactory.o\
-	  			Falcon9Rocket.o EngineState.o EngineFactory.o Engine.o DragonSpacecraftFactory.o DragonSpacecraft.o DragonFactory.o\
+	  			Falcon9Rocket.o EngineState.o EngineFactory.o Engine.o DragonSpaceCraftFactory.o DragonSpacecraft.o DragonFactory.o\
 		 			Dragon.o CrewDragonFactory.o CrewDragon.o Core.o Communicate.o Caretaker.o main.o
 
 # Linking all the object code:
@@ -22,7 +22,7 @@ CrewDragonFactory.o: CrewDragonFactory.h CrewDragonFactory.cpp
 Dragon.o: Dragon.h Dragon.cpp
 DragonFactory.o: DragonFactory.h DragonFactory.cpp
 DragonSpacecraft.o: DragonSpacecraft.h DragonSpacecraft.cpp
-DragonSpacecraftFactory.o: DragonSpacecraftFactory.h DragonSpacecraftFactory.cpp
+DragonSpaceCraftFactory.o: DragonSpaceCraftFactory.h DragonSpaceCraftFactory.cpp
 Engine.o: Engine.h Engine.cpp
 EngineFactory.o: EngineFactory.h EngineFactory.cpp
 EngineState.o: EngineState.h EngineState.cpp

@@ -2,10 +2,10 @@
 #include<iostream>
 Caretaker :: Caretaker()
 {}
-    
+
 Memento* Caretaker::getMemento()
 { 
-	return memento; 
+	return memento;
 }
 
 void Caretaker::setMemento(Memento* m)

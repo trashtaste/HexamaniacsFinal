@@ -14,7 +14,7 @@ class Satellite
 		//! Constructor
 
 		/* Instantiates a Satellite Object */
-		Satellite(double w); 
+		Satellite(double w);
 		/**
 		 Used to add a next satellite
 		*/
@@ -25,7 +25,7 @@ class Satellite
 		virtual ~Satellite();
 		/**
  		 Used to add a communicate object for the command pattern
- 		*/	
+ 		*/
 		virtual void addComm(Communicate*) = 0;
 		/**
 		 returns the weight of the satellite
@@ -36,14 +36,26 @@ class Satellite
 		*/
 		Satellite* getNext();
 		/**
-		 used to receive a laser message 
+		 used to receive a laser message
 		*/
 		virtual void lmessage() = 0;
 		protected:
-			
+			//!weight
+			/**
+			 represents the weight of Satellites
+			*/
 			double weight;
+			//!Satellite copy constructor
+			/**
+			create a copy of the current Satellite object
+			*/
 			Satellite(const Satellite&);
-	Satellite* next;
+			//!next
+			/**
+			Pointer to next Satellite
+			*/
+
+			Satellite* next;
 };
 
 #endif
