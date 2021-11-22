@@ -1,0 +1,177 @@
+\hypertarget{classCore}{}\doxysection{Core Class Reference}
+\label{classCore}\index{Core@{Core}}
+
+
+implements rocket interface and acts as a composite participant  
+
+
+
+
+{\ttfamily \#include $<$Core.\+h$>$}
+
+
+
+Inheritance diagram for Core\+:
+% FIG 0
+
+
+Collaboration diagram for Core\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCore_a14e63188e0aa7c4a6f72d5501384d1f9}{Core}} ()
+\item 
+\mbox{\hyperlink{classCore_a776f8c46504b14183883c6273f93eaed}{$\sim$\+Core}} ()
+\item 
+void \mbox{\hyperlink{classCore_ac3c62341d527cfd8d4a1d8abe79bf5eb}{execute}} ()
+\item 
+void \mbox{\hyperlink{classCore_ac2591806560c88bc38c4a74545d38554}{remove}} ()
+\item 
+void \mbox{\hyperlink{classCore_acf241ec9f4f14cf16c06bde40943b003}{add}} (\mbox{\hyperlink{classRocket}{Rocket}} $\ast$rocket)
+\item 
+void \mbox{\hyperlink{classCore_aac5ab518b6163139d22dfc0e47142e48}{set\+Fuel}} (double fuel)
+\item 
+double \mbox{\hyperlink{classCore_afa372d56c2816cbb6a939b56d108cd90}{get\+Fuel}} ()
+\item 
+double \mbox{\hyperlink{classCore_aecb5390840ea5afc0ec4c7a2f66105ed}{get\+Weight}} ()
+\item 
+void \mbox{\hyperlink{classCore_af206a0c62fafd19ebd4dfdeebf62e293}{set\+Weight}} (double w)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+implements rocket interface and acts as a composite participant 
+
+inherit extends \mbox{\hyperlink{classRocket}{Rocket}} class. It has a single engine\+List member which is a vector that holds pointers to the leaf engines. Overides the adding, removing and executing methods defined by \mbox{\hyperlink{classRocket}{Rocket}}.
+
+\begin{DoxyAuthor}{Author}
+Thivessh Jhugroo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCore_a14e63188e0aa7c4a6f72d5501384d1f9}\label{classCore_a14e63188e0aa7c4a6f72d5501384d1f9}} 
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Core\+::\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classCore}{Core}} constructor. it taks no parameters \mbox{\Hypertarget{classCore_a776f8c46504b14183883c6273f93eaed}\label{classCore_a776f8c46504b14183883c6273f93eaed}} 
+\index{Core@{Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys leaf in hierarchy. \begin{DoxyPostcond}{Postcondition}
+leaf \textquotesingle{}node\textquotesingle{} removed from hierarchy. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCore_acf241ec9f4f14cf16c06bde40943b003}\label{classCore_acf241ec9f4f14cf16c06bde40943b003}} 
+\index{Core@{Core}!add@{add}}
+\index{add@{add}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Core\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRocket}{Rocket}} $\ast$}]{rocket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+adds component to the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rocket} & The component pointer to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+adds a component to list. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classRocket_a544e37b0194d55a59f4a9a1c63b368c7}{Rocket}}.
+
+\mbox{\Hypertarget{classCore_ac3c62341d527cfd8d4a1d8abe79bf5eb}\label{classCore_ac3c62341d527cfd8d4a1d8abe79bf5eb}} 
+\index{Core@{Core}!execute@{execute}}
+\index{execute@{execute}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Core\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+performs the execute on A\+LL core\+Merlin\+Engine function. 
+
+Reimplemented from \mbox{\hyperlink{classRocket_ad8280154654e6a0ca1d4f7e77c2977da}{Rocket}}.
+
+\mbox{\Hypertarget{classCore_afa372d56c2816cbb6a939b56d108cd90}\label{classCore_afa372d56c2816cbb6a939b56d108cd90}} 
+\index{Core@{Core}!getFuel@{getFuel}}
+\index{getFuel@{getFuel}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getFuel()}{getFuel()}}
+{\footnotesize\ttfamily double Core\+::get\+Fuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns the fuel attribute. 
+
+Implements \mbox{\hyperlink{classRocket_af8c35dab87014f4ae9da84112deb2b0d}{Rocket}}.
+
+\mbox{\Hypertarget{classCore_aecb5390840ea5afc0ec4c7a2f66105ed}\label{classCore_aecb5390840ea5afc0ec4c7a2f66105ed}} 
+\index{Core@{Core}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily double Core\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns total weight of all the stages in the stage\+List \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRocket_a8f2b46d95d249625de66eb5086f52465}{Rocket}}.
+
+\mbox{\Hypertarget{classCore_ac2591806560c88bc38c4a74545d38554}\label{classCore_ac2591806560c88bc38c4a74545d38554}} 
+\index{Core@{Core}!remove@{remove}}
+\index{remove@{remove}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Core\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+removes the last added component.
+
+\begin{DoxyPostcond}{Postcondition}
+removes components from list. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classRocket_a0ac69614a71a468a0cd23df593d3121f}{Rocket}}.
+
+\mbox{\Hypertarget{classCore_aac5ab518b6163139d22dfc0e47142e48}\label{classCore_aac5ab518b6163139d22dfc0e47142e48}} 
+\index{Core@{Core}!setFuel@{setFuel}}
+\index{setFuel@{setFuel}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setFuel()}{setFuel()}}
+{\footnotesize\ttfamily void Core\+::set\+Fuel (\begin{DoxyParamCaption}\item[{double}]{fuel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns total weight of all the engines in the enginelist \begin{DoxyReturn}{Returns}
+double set the fuel vairable
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em fuel} & value to set the fuel attribute to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classRocket_afad5931cee031a0cf3092731251e9aca}{Rocket}}.
+
+\mbox{\Hypertarget{classCore_af206a0c62fafd19ebd4dfdeebf62e293}\label{classCore_af206a0c62fafd19ebd4dfdeebf62e293}} 
+\index{Core@{Core}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily void Core\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns sets the weight of componenets stage\+List \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRocket_a0dae3149276d65fba3263f8de400fc13}{Rocket}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core.\+h\item 
+Core.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classStarlinkSatellite}{}\doxysection{Starlink\+Satellite Class Reference}
+\label{classStarlinkSatellite}\index{StarlinkSatellite@{StarlinkSatellite}}
+
+
+{\ttfamily \#include $<$Starlink\+Satellite.\+h$>$}
+
+
+
+Inheritance diagram for Starlink\+Satellite\+:
+% FIG 0
+
+
+Collaboration diagram for Starlink\+Satellite\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStarlinkSatellite_a084a984d0bb27edab9b5cea4a0ac8846}{Starlink\+Satellite}} (double w)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStarlinkSatellite_a39ce908f4569d578afecd7cafb3d30ca}\label{classStarlinkSatellite_a39ce908f4569d578afecd7cafb3d30ca}} 
+void \mbox{\hyperlink{classStarlinkSatellite_a39ce908f4569d578afecd7cafb3d30ca}{ground\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Function to send a message to a ground target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStarlinkSatellite_a05b37dbd5fc1accab9e8b320596b2cf4}\label{classStarlinkSatellite_a05b37dbd5fc1accab9e8b320596b2cf4}} 
+void \mbox{\hyperlink{classStarlinkSatellite_a05b37dbd5fc1accab9e8b320596b2cf4}{satellite\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Function to send a message to a satellite target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStarlinkSatellite_ab1295d932b8e57902e07bbc0dba55b18}\label{classStarlinkSatellite_ab1295d932b8e57902e07bbc0dba55b18}} 
+void \mbox{\hyperlink{classStarlinkSatellite_ab1295d932b8e57902e07bbc0dba55b18}{lmessage}} ()
+\begin{DoxyCompactList}\small\item\em Function to receive a message. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStarlinkSatellite_a73670ac01ad42ff54b1ecead6cb5a333}{$\sim$\+Starlink\+Satellite}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStarlinkSatellite_a4af4d3032686b69ae11f85ffb61664de}{Starlink\+Satellite}} (int w)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStarlinkSatellite_a976618c15586ced9c14cc2aa1e51492a}\label{classStarlinkSatellite_a976618c15586ced9c14cc2aa1e51492a}} 
+virtual \mbox{\hyperlink{classStarlinkSatellite}{Starlink\+Satellite}} $\ast$ \mbox{\hyperlink{classStarlinkSatellite_a976618c15586ced9c14cc2aa1e51492a}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Function to return a copy of this object using a copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStarlinkSatellite_a38823239fb7789f2cc11e4a4689e72cc}\label{classStarlinkSatellite_a38823239fb7789f2cc11e4a4689e72cc}} 
+void \mbox{\hyperlink{classStarlinkSatellite_a38823239fb7789f2cc11e4a4689e72cc}{add\+Comm}} (\mbox{\hyperlink{classCommunicate}{Communicate}} $\ast$)
+\begin{DoxyCompactList}\small\item\em adds a communicate object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStarlinkSatellite_a763bb4c15c1a6ad31d65e91e97d67aaa}{execute}} ()
+\begin{DoxyCompactList}\small\item\em implementation of the execute function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStarlinkSatellite_a59d45ae41a56da1c9de2628fdff4404e}\label{classStarlinkSatellite_a59d45ae41a56da1c9de2628fdff4404e}} 
+\mbox{\hyperlink{classCommunicate}{Communicate}} $\ast$ {\bfseries smessage}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStarlinkSatellite_a2ee600bae81547846f1bf2749db9edeb}{Starlink\+Satellite}} (const \mbox{\hyperlink{classStarlinkSatellite}{Starlink\+Satellite}} \&)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Starlink Satellites, inherits from \mbox{\hyperlink{classSatellite}{Satellite}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStarlinkSatellite_a084a984d0bb27edab9b5cea4a0ac8846}\label{classStarlinkSatellite_a084a984d0bb27edab9b5cea4a0ac8846}} 
+\index{StarlinkSatellite@{StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\index{StarlinkSatellite@{StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\doxysubsubsection{\texorpdfstring{StarlinkSatellite()}{StarlinkSatellite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Starlink\+Satellite\+::\+Starlink\+Satellite (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+instantiates the class\textquotesingle{}s attributes \mbox{\Hypertarget{classStarlinkSatellite_a73670ac01ad42ff54b1ecead6cb5a333}\label{classStarlinkSatellite_a73670ac01ad42ff54b1ecead6cb5a333}} 
+\index{StarlinkSatellite@{StarlinkSatellite}!````~StarlinkSatellite@{$\sim$StarlinkSatellite}}
+\index{````~StarlinkSatellite@{$\sim$StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\doxysubsubsection{\texorpdfstring{$\sim$StarlinkSatellite()}{~StarlinkSatellite()}}
+{\footnotesize\ttfamily Starlink\+Satellite\+::$\sim$\+Starlink\+Satellite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+destroys the object \mbox{\Hypertarget{classStarlinkSatellite_a4af4d3032686b69ae11f85ffb61664de}\label{classStarlinkSatellite_a4af4d3032686b69ae11f85ffb61664de}} 
+\index{StarlinkSatellite@{StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\index{StarlinkSatellite@{StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\doxysubsubsection{\texorpdfstring{StarlinkSatellite()}{StarlinkSatellite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Starlink\+Satellite\+::\+Starlink\+Satellite (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+instantiates the class\textquotesingle{}s attributes \mbox{\Hypertarget{classStarlinkSatellite_a2ee600bae81547846f1bf2749db9edeb}\label{classStarlinkSatellite_a2ee600bae81547846f1bf2749db9edeb}} 
+\index{StarlinkSatellite@{StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\index{StarlinkSatellite@{StarlinkSatellite}!StarlinkSatellite@{StarlinkSatellite}}
+\doxysubsubsection{\texorpdfstring{StarlinkSatellite()}{StarlinkSatellite()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Starlink\+Satellite\+::\+Starlink\+Satellite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStarlinkSatellite}{Starlink\+Satellite}} \&}]{starlink\+Satellite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+copy constructor 
+
+instantiates the attributes of the class using attributes from the parsed in object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStarlinkSatellite_a763bb4c15c1a6ad31d65e91e97d67aaa}\label{classStarlinkSatellite_a763bb4c15c1a6ad31d65e91e97d67aaa}} 
+\index{StarlinkSatellite@{StarlinkSatellite}!execute@{execute}}
+\index{execute@{execute}!StarlinkSatellite@{StarlinkSatellite}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Starlink\+Satellite\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+implementation of the execute function 
+
+provides additional functionality to the class holding it 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Starlink\+Satellite.\+h\item 
+Starlink\+Satellite.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\hypertarget{classSatellite}{}\doxysection{Satellite Class Reference}
+\label{classSatellite}\index{Satellite@{Satellite}}
+
+
+{\ttfamily \#include $<$Satellite.\+h$>$}
+
+
+
+Inheritance diagram for Satellite\+:
+% FIG 0
+
+
+Collaboration diagram for Satellite\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSatellite_a9a5f49c4c06cc07e07eace5b0d7ffba4}\label{classSatellite_a9a5f49c4c06cc07e07eace5b0d7ffba4}} 
+\mbox{\hyperlink{classSatellite_a9a5f49c4c06cc07e07eace5b0d7ffba4}{Satellite}} (double w)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSatellite_a22378cc526792766b4cae38d8fd22ccd}{add}} (\mbox{\hyperlink{classSatellite}{Satellite}} $\ast$n)
+\item 
+\mbox{\Hypertarget{classSatellite_a7dfb03d8ff53e0bbec69647a310bbbd3}\label{classSatellite_a7dfb03d8ff53e0bbec69647a310bbbd3}} 
+virtual \mbox{\hyperlink{classSatellite_a7dfb03d8ff53e0bbec69647a310bbbd3}{$\sim$\+Satellite}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSatellite_a534fe932530733867da2468754fcf79e}{add\+Comm}} (\mbox{\hyperlink{classCommunicate}{Communicate}} $\ast$)=0
+\item 
+double \mbox{\hyperlink{classSatellite_af20f214e97d0f5581c9f97534f1c530b}{get\+Weight}} ()
+\item 
+\mbox{\hyperlink{classSatellite}{Satellite}} $\ast$ \mbox{\hyperlink{classSatellite_a22ab1e004ff94482d240503b6320599c}{get\+Next}} ()
+\item 
+virtual void \mbox{\hyperlink{classSatellite_a108a388c04616291d0a3a50cffa0b77c}{lmessage}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSatellite_a3d19b8f994c2ef28005fbfbe13bcd019}{Satellite}} (const \mbox{\hyperlink{classSatellite}{Satellite}} \&)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSatellite}{Satellite}} copy constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSatellite_a4f558727b9a8a02b0ced2d747a50f0af}{weight}}
+\begin{DoxyCompactList}\small\item\em weight \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSatellite}{Satellite}} $\ast$ \mbox{\hyperlink{classSatellite_a389ada11539ef7036dd68ffcc959fd41}{next}}
+\begin{DoxyCompactList}\small\item\em next \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for \mbox{\hyperlink{classStarlinkSatellite}{Starlink\+Satellite}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSatellite_a3d19b8f994c2ef28005fbfbe13bcd019}\label{classSatellite_a3d19b8f994c2ef28005fbfbe13bcd019}} 
+\index{Satellite@{Satellite}!Satellite@{Satellite}}
+\index{Satellite@{Satellite}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{Satellite()}{Satellite()}}
+{\footnotesize\ttfamily Satellite\+::\+Satellite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSatellite}{Satellite}} \&}]{satellite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{classSatellite}{Satellite}} copy constructor. 
+
+create a copy of the current \mbox{\hyperlink{classSatellite}{Satellite}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSatellite_a22378cc526792766b4cae38d8fd22ccd}\label{classSatellite_a22378cc526792766b4cae38d8fd22ccd}} 
+\index{Satellite@{Satellite}!add@{add}}
+\index{add@{add}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Satellite\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSatellite}{Satellite}} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Used to add a next satellite \mbox{\Hypertarget{classSatellite_a534fe932530733867da2468754fcf79e}\label{classSatellite_a534fe932530733867da2468754fcf79e}} 
+\index{Satellite@{Satellite}!addComm@{addComm}}
+\index{addComm@{addComm}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{addComm()}{addComm()}}
+{\footnotesize\ttfamily virtual void Satellite\+::add\+Comm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommunicate}{Communicate}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Used to add a communicate object for the command pattern 
+
+Implemented in \mbox{\hyperlink{classStarlinkSatellite_a38823239fb7789f2cc11e4a4689e72cc}{Starlink\+Satellite}}.
+
+\mbox{\Hypertarget{classSatellite_a22ab1e004ff94482d240503b6320599c}\label{classSatellite_a22ab1e004ff94482d240503b6320599c}} 
+\index{Satellite@{Satellite}!getNext@{getNext}}
+\index{getNext@{getNext}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{getNext()}{getNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSatellite}{Satellite}} $\ast$ Satellite\+::get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the next satellite \mbox{\Hypertarget{classSatellite_af20f214e97d0f5581c9f97534f1c530b}\label{classSatellite_af20f214e97d0f5581c9f97534f1c530b}} 
+\index{Satellite@{Satellite}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily double Satellite\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the weight of the satellite \mbox{\Hypertarget{classSatellite_a108a388c04616291d0a3a50cffa0b77c}\label{classSatellite_a108a388c04616291d0a3a50cffa0b77c}} 
+\index{Satellite@{Satellite}!lmessage@{lmessage}}
+\index{lmessage@{lmessage}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{lmessage()}{lmessage()}}
+{\footnotesize\ttfamily virtual void Satellite\+::lmessage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+used to receive a laser message 
+
+Implemented in \mbox{\hyperlink{classStarlinkSatellite_ab1295d932b8e57902e07bbc0dba55b18}{Starlink\+Satellite}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSatellite_a389ada11539ef7036dd68ffcc959fd41}\label{classSatellite_a389ada11539ef7036dd68ffcc959fd41}} 
+\index{Satellite@{Satellite}!next@{next}}
+\index{next@{next}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSatellite}{Satellite}}$\ast$ Satellite\+::next\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+next 
+
+Pointer to next \mbox{\hyperlink{classSatellite}{Satellite}} \mbox{\Hypertarget{classSatellite_a4f558727b9a8a02b0ced2d747a50f0af}\label{classSatellite_a4f558727b9a8a02b0ced2d747a50f0af}} 
+\index{Satellite@{Satellite}!weight@{weight}}
+\index{weight@{weight}!Satellite@{Satellite}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily double Satellite\+::weight\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+weight 
+
+represents the weight of Satellites 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Satellite.\+h\item 
+Satellite.\+cpp\end{DoxyCompactItemize}

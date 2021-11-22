@@ -1,0 +1,30 @@
+\hypertarget{classCommunicate}{}\doxysection{Communicate Class Reference}
+\label{classCommunicate}\index{Communicate@{Communicate}}
+
+
+\mbox{\hyperlink{classCommunicate}{Communicate}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Communicate.\+h$>$}
+
+
+
+Inheritance diagram for Communicate\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommunicate_a80e9966c3abc7c0075acd75dc505d318}\label{classCommunicate_a80e9966c3abc7c0075acd75dc505d318}} 
+virtual void \mbox{\hyperlink{classCommunicate_a80e9966c3abc7c0075acd75dc505d318}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Execute Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCommunicate}{Communicate}} Class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Communicate.\+h\item 
+Communicate.\+cpp\end{DoxyCompactItemize}

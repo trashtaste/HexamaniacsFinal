@@ -1,0 +1,70 @@
+\hypertarget{classsimulation}{}\doxysection{simulation Class Reference}
+\label{classsimulation}\index{simulation@{simulation}}
+
+
+simulation class  
+
+
+
+
+{\ttfamily \#include $<$simulation.\+h$>$}
+
+
+
+Inheritance diagram for simulation\+:
+% FIG 0
+
+
+Collaboration diagram for simulation\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classsimulation_a71140e74e4b50eb0979f9ae4fd10eb01}{run}} ()=0
+\begin{DoxyCompactList}\small\item\em run method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsimulation_a24058669a73d520a14d351bf15e60025}{create\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em create\+Ship method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimulation_ae26dbaf9ce66e9f30869759a7c399913}\label{classsimulation_ae26dbaf9ce66e9f30869759a7c399913}} 
+\mbox{\hyperlink{classSpaceShip}{Space\+Ship}} $\ast$ \mbox{\hyperlink{classsimulation_ae26dbaf9ce66e9f30869759a7c399913}{ship}}
+\begin{DoxyCompactList}\small\item\em The spaceship involved in the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+simulation class 
+
+Is the strategy interface of the Strategy Design Pattern. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsimulation_a24058669a73d520a14d351bf15e60025}\label{classsimulation_a24058669a73d520a14d351bf15e60025}} 
+\index{simulation@{simulation}!createShip@{createShip}}
+\index{createShip@{createShip}!simulation@{simulation}}
+\doxysubsubsection{\texorpdfstring{createShip()}{createShip()}}
+{\footnotesize\ttfamily void simulation\+::create\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+create\+Ship method 
+
+method used to initialize the ship member \mbox{\Hypertarget{classsimulation_a71140e74e4b50eb0979f9ae4fd10eb01}\label{classsimulation_a71140e74e4b50eb0979f9ae4fd10eb01}} 
+\index{simulation@{simulation}!run@{run}}
+\index{run@{run}!simulation@{simulation}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void simulation\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+run method 
+
+pure virtual function to be implemented in concrete classes 
+
+Implemented in \mbox{\hyperlink{classlaunchSimulation_a2545e4b266ca2c0f7a892e98f59fcf9f}{launch\+Simulation}}, and \mbox{\hyperlink{classtestSimulation_a932f01026edba4e101244fa1b485e730}{test\+Simulation}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simulation.\+h\item 
+simulation.\+cpp\end{DoxyCompactItemize}

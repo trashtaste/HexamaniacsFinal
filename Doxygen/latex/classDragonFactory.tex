@@ -1,0 +1,78 @@
+\hypertarget{classDragonFactory}{}\doxysection{Dragon\+Factory Class Reference}
+\label{classDragonFactory}\index{DragonFactory@{DragonFactory}}
+
+
+\mbox{\hyperlink{classDragonFactory}{Dragon\+Factory}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Dragon\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Dragon\+Factory\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDragonFactory_a09a9e1e3685c7b83f3075651a6f8c0da}{Dragon\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classDragonFactory_ab2d191beb1ac01c24b68470559406e87}{$\sim$\+Dragon\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classpayload}{payload}} $\ast$ \mbox{\hyperlink{classDragonFactory_a3a31f40686233c5123199d3e3ba8a84a}{create\+Dragon}} ()=0
+\begin{DoxyCompactList}\small\item\em A Function to create a new \mbox{\hyperlink{classDragon}{Dragon}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDragonFactory}{Dragon\+Factory}} Class. 
+
+The \mbox{\hyperlink{classDragonFactory}{Dragon\+Factory}} Class will provide an interface for the creation of \mbox{\hyperlink{classDragon}{Dragon}} Factories. \mbox{\hyperlink{classCrewDragonFactory}{Crew\+Dragon\+Factory}} and \mbox{\hyperlink{classDragonSpaceCraftFactory}{Dragon\+Space\+Craft\+Factory}} both inherit and implment it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDragonFactory_a09a9e1e3685c7b83f3075651a6f8c0da}\label{classDragonFactory_a09a9e1e3685c7b83f3075651a6f8c0da}} 
+\index{DragonFactory@{DragonFactory}!DragonFactory@{DragonFactory}}
+\index{DragonFactory@{DragonFactory}!DragonFactory@{DragonFactory}}
+\doxysubsubsection{\texorpdfstring{DragonFactory()}{DragonFactory()}}
+{\footnotesize\ttfamily Dragon\+Factory\+::\+Dragon\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Instantiates a \mbox{\hyperlink{classDragonFactory}{Dragon\+Factory}} object \mbox{\Hypertarget{classDragonFactory_ab2d191beb1ac01c24b68470559406e87}\label{classDragonFactory_ab2d191beb1ac01c24b68470559406e87}} 
+\index{DragonFactory@{DragonFactory}!````~DragonFactory@{$\sim$DragonFactory}}
+\index{````~DragonFactory@{$\sim$DragonFactory}!DragonFactory@{DragonFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$DragonFactory()}{~DragonFactory()}}
+{\footnotesize\ttfamily Dragon\+Factory\+::$\sim$\+Dragon\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destroys a \mbox{\hyperlink{classDragonFactory}{Dragon\+Factory}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDragonFactory_a3a31f40686233c5123199d3e3ba8a84a}\label{classDragonFactory_a3a31f40686233c5123199d3e3ba8a84a}} 
+\index{DragonFactory@{DragonFactory}!createDragon@{createDragon}}
+\index{createDragon@{createDragon}!DragonFactory@{DragonFactory}}
+\doxysubsubsection{\texorpdfstring{createDragon()}{createDragon()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classpayload}{payload}}$\ast$ Dragon\+Factory\+::create\+Dragon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A Function to create a new \mbox{\hyperlink{classDragon}{Dragon}}. 
+
+\begin{DoxyReturn}{Returns}
+a new instance of either \mbox{\hyperlink{classCrewDragon}{Crew\+Dragon}} or \mbox{\hyperlink{classDragonSpaceCraft}{Dragon\+Space\+Craft}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDragonSpaceCraftFactory_ad67b3fda438b133d774a8ddc107a63cc}{Dragon\+Space\+Craft\+Factory}}, and \mbox{\hyperlink{classCrewDragonFactory_aa4f8b47093e20d7f8f14ac7ef4bc4d57}{Crew\+Dragon\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dragon\+Factory.\+h\item 
+Dragon\+Factory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\hypertarget{classSpaceShip}{}\doxysection{Space\+Ship Class Reference}
+\label{classSpaceShip}\index{SpaceShip@{SpaceShip}}
+
+
+\mbox{\hyperlink{classSpaceShip}{Space\+Ship}} class.  
+
+
+
+
+{\ttfamily \#include $<$Space\+Ship.\+h$>$}
+
+
+
+Collaboration diagram for Space\+Ship\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSpaceShip_aa8b410129416542e44d505167db5dd0e}\label{classSpaceShip_aa8b410129416542e44d505167db5dd0e}} 
+{\bfseries Space\+Ship} (int payload\+Type, int rocket\+Type)
+\item 
+void \mbox{\hyperlink{classSpaceShip_a7217185265a8b9c9180b5308057e3467}{attach}} (\mbox{\hyperlink{classISS}{I\+SS}} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em attach method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpaceShip_a8c1d6d6e0639a5ea332a05314798bc43}{detach}} ()
+\begin{DoxyCompactList}\small\item\em detach method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpaceShip_af50bf0a5be586acc54ebebbc32ac07d0}{change\+State}} ()
+\begin{DoxyCompactList}\small\item\em notify method \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpaceShip_ae5743084112d7a7f0934279099216113}{get\+State}} ()
+\item 
+void \mbox{\hyperlink{classSpaceShip_a0850d5459358906d7cd19b0e985fa901}{set\+State}} (\mbox{\hyperlink{classState}{State}} $\ast$state)
+\item 
+void \mbox{\hyperlink{classSpaceShip_aec78f3f586920a858889da4368a19fdb}{notify}} ()
+\item 
+void \mbox{\hyperlink{classSpaceShip_adabd8e2454ddc9bcfd02a8794bcded31}{modify}} ()
+\item 
+void \mbox{\hyperlink{classSpaceShip_a5d5d9fa18f3fb69456684c51b6c731d7}{start}} ()
+\item 
+bool \mbox{\hyperlink{classSpaceShip_a19f7a1f54eae4c567737a50889f8c85a}{enough\+Fuel}} ()
+\item 
+void \mbox{\hyperlink{classSpaceShip_a8f3f7a5617926457ea0bc6f596303d50}{in\+Orbit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSpaceShip_a78ca965d8502fdca2c8ce718f0f0f8fe}\label{classSpaceShip_a78ca965d8502fdca2c8ce718f0f0f8fe}} 
+\mbox{\hyperlink{classISS}{I\+SS}} $\ast$ \mbox{\hyperlink{classSpaceShip_a78ca965d8502fdca2c8ce718f0f0f8fe}{Observer}}
+\begin{DoxyCompactList}\small\item\em A pointer to an object of type \mbox{\hyperlink{classISS}{I\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSpaceShip_a207f9c1619c6adf9bad76bde1c028d4e}\label{classSpaceShip_a207f9c1619c6adf9bad76bde1c028d4e}} 
+\mbox{\hyperlink{classpayload}{payload}} $\ast$ \mbox{\hyperlink{classSpaceShip_a207f9c1619c6adf9bad76bde1c028d4e}{\+\_\+payload}}
+\begin{DoxyCompactList}\small\item\em A pointer to an object of type Payload. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSpaceShip_a812ea3f061fb318b8256ee911639c5cb}\label{classSpaceShip_a812ea3f061fb318b8256ee911639c5cb}} 
+\mbox{\hyperlink{classRocket}{Rocket}} $\ast$ \mbox{\hyperlink{classSpaceShip_a812ea3f061fb318b8256ee911639c5cb}{rocket}}
+\begin{DoxyCompactList}\small\item\em A pointer to an object of type \mbox{\hyperlink{classRocket}{Rocket}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSpaceShip_aaeb930de183d0011a1d7accbcd7c04a1}\label{classSpaceShip_aaeb930de183d0011a1d7accbcd7c04a1}} 
+\mbox{\hyperlink{classMemento}{Memento}} $\ast$ {\bfseries m}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classSpaceShip}{Space\+Ship}} class. 
+
+Is the subject participant in the Observer Design Pattern. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpaceShip_a7217185265a8b9c9180b5308057e3467}\label{classSpaceShip_a7217185265a8b9c9180b5308057e3467}} 
+\index{SpaceShip@{SpaceShip}!attach@{attach}}
+\index{attach@{attach}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Space\+Ship\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classISS}{I\+SS}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+
+
+attach method 
+
+Attaches a pointer to an \mbox{\hyperlink{classISS}{I\+SS}} observer to the Observer variable. \mbox{\Hypertarget{classSpaceShip_af50bf0a5be586acc54ebebbc32ac07d0}\label{classSpaceShip_af50bf0a5be586acc54ebebbc32ac07d0}} 
+\index{SpaceShip@{SpaceShip}!changeState@{changeState}}
+\index{changeState@{changeState}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Space\+Ship\+::change\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+notify method 
+
+A pure virtual method that will be implemented by the concrete subject class Ship\+Launched. used to change between states \mbox{\Hypertarget{classSpaceShip_a8c1d6d6e0639a5ea332a05314798bc43}\label{classSpaceShip_a8c1d6d6e0639a5ea332a05314798bc43}} 
+\index{SpaceShip@{SpaceShip}!detach@{detach}}
+\index{detach@{detach}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Space\+Ship\+::detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+detach method 
+
+Detaches the current Observer by setting it to N\+U\+LL. \mbox{\Hypertarget{classSpaceShip_a19f7a1f54eae4c567737a50889f8c85a}\label{classSpaceShip_a19f7a1f54eae4c567737a50889f8c85a}} 
+\index{SpaceShip@{SpaceShip}!enoughFuel@{enoughFuel}}
+\index{enoughFuel@{enoughFuel}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{enoughFuel()}{enoughFuel()}}
+{\footnotesize\ttfamily bool Space\+Ship\+::enough\+Fuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks whether there is enough fuel to proceed and returns the result \mbox{\Hypertarget{classSpaceShip_ae5743084112d7a7f0934279099216113}\label{classSpaceShip_ae5743084112d7a7f0934279099216113}} 
+\index{SpaceShip@{SpaceShip}!getState@{getState}}
+\index{getState@{getState}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily string Space\+Ship\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns current state as a string \mbox{\Hypertarget{classSpaceShip_a8f3f7a5617926457ea0bc6f596303d50}\label{classSpaceShip_a8f3f7a5617926457ea0bc6f596303d50}} 
+\index{SpaceShip@{SpaceShip}!inOrbit@{inOrbit}}
+\index{inOrbit@{inOrbit}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{inOrbit()}{inOrbit()}}
+{\footnotesize\ttfamily void Space\+Ship\+::in\+Orbit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+calls the payload\textquotesingle{}s functionality to be used in state3 \mbox{\Hypertarget{classSpaceShip_adabd8e2454ddc9bcfd02a8794bcded31}\label{classSpaceShip_adabd8e2454ddc9bcfd02a8794bcded31}} 
+\index{SpaceShip@{SpaceShip}!modify@{modify}}
+\index{modify@{modify}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{modify()}{modify()}}
+{\footnotesize\ttfamily void Space\+Ship\+::modify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+used to modify the attributes of the class by calling relavent operations from the design patterns \mbox{\Hypertarget{classSpaceShip_aec78f3f586920a858889da4368a19fdb}\label{classSpaceShip_aec78f3f586920a858889da4368a19fdb}} 
+\index{SpaceShip@{SpaceShip}!notify@{notify}}
+\index{notify@{notify}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Space\+Ship\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+notifies the observer of a state change \mbox{\Hypertarget{classSpaceShip_a0850d5459358906d7cd19b0e985fa901}\label{classSpaceShip_a0850d5459358906d7cd19b0e985fa901}} 
+\index{SpaceShip@{SpaceShip}!setState@{setState}}
+\index{setState@{setState}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Space\+Ship\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classState}{State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+sets current state \mbox{\Hypertarget{classSpaceShip_a5d5d9fa18f3fb69456684c51b6c731d7}\label{classSpaceShip_a5d5d9fa18f3fb69456684c51b6c731d7}} 
+\index{SpaceShip@{SpaceShip}!start@{start}}
+\index{start@{start}!SpaceShip@{SpaceShip}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Space\+Ship\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the static fire test by calling the rocket\textquotesingle{}s operation 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Space\+Ship.\+h\item 
+Space\+Ship.\+cpp\end{DoxyCompactItemize}

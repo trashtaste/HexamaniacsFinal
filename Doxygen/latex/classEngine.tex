@@ -1,0 +1,206 @@
+\hypertarget{classEngine}{}\doxysection{Engine Class Reference}
+\label{classEngine}\index{Engine@{Engine}}
+
+
+defines engine interface and acts as the abstract/leaf participant  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+
+
+Inheritance diagram for Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Engine\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine}} ()
+\item 
+\mbox{\hyperlink{classEngine_a7708e6daec3fff75b533f5ff4c174715}{Engine}} (double weight, double fuel)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engine}} ()
+\item 
+virtual void \mbox{\hyperlink{classEngine_ad85f4f9faf06e55c18ca57c4a69aeef0}{execute}} ()=0
+\item 
+virtual double \mbox{\hyperlink{classEngine_a17d990fb0d6541d839d881f07e483aa4}{get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em A Function to get the mass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEngine_a2c75f9e1b83d535e9e970f5c5c8661f0}{set\+Weight}} (double w)
+\item 
+void \mbox{\hyperlink{classEngine_a4e02c814dd5a32ad80c763eb5123154c}{set\+Fuel}} (double fuel)
+\item 
+double \mbox{\hyperlink{classEngine_aaecbd5c7bac74bcccc4761c799a9b83d}{get\+Fuel}} ()
+\item 
+virtual bool \mbox{\hyperlink{classEngine_acc1d718c5b626d2237e2112a9bd11747}{is\+On}} ()
+\begin{DoxyCompactList}\small\item\em A Function to check whether the engine is on or not. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEngine_ab21ad5ed09502d4c3672cb19c780c2b8}{switch\+On}} ()
+\begin{DoxyCompactList}\small\item\em A Function to switch the engine on. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEngine_a237d2db8fb9a6085e900370ac5cfbc5a}{switch\+Off}} ()
+\begin{DoxyCompactList}\small\item\em A Function to switch the engine off. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+defines engine interface and acts as the abstract/leaf participant 
+
+Abstract class that extends \mbox{\hyperlink{classRocket}{Rocket}} class and defines interface for Engines. Defines primitive operations that inherited classes need to implement.
+
+\begin{DoxyAuthor}{Author}
+Thivessh Jhugroo 
+
+Tshegofatsho Motlatle 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\label{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classEngine}{Engine}} constructor. it taks no parameters \mbox{\Hypertarget{classEngine_a7708e6daec3fff75b533f5ff4c174715}\label{classEngine_a7708e6daec3fff75b533f5ff4c174715}} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{double}]{weight,  }\item[{double}]{fuel }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Instantiates a \mbox{\hyperlink{classEngine}{Engine}} object 
+\begin{DoxyParams}{Parameters}
+{\em mass} & is a double that represents the mass of the engine excluding fuel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}\label{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}} 
+\index{Engine@{Engine}!````~Engine@{$\sim$Engine}}
+\index{````~Engine@{$\sim$Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{$\sim$Engine()}{~Engine()}}
+{\footnotesize\ttfamily Engine\+::$\sim$\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual destructor calls destructor of subclasses. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_ad85f4f9faf06e55c18ca57c4a69aeef0}\label{classEngine_ad85f4f9faf06e55c18ca57c4a69aeef0}} 
+\index{Engine@{Engine}!execute@{execute}}
+\index{execute@{execute}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Engine\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+pure virtual function to be defined by sub-\/concrete classes 
+
+Reimplemented from \mbox{\hyperlink{classRocket_ad8280154654e6a0ca1d4f7e77c2977da}{Rocket}}.
+
+
+
+Implemented in \mbox{\hyperlink{classMerlinEngine_a064c21e00f8db33bf1cba7a60cf440fa}{Merlin\+Engine}}, and \mbox{\hyperlink{classVacuumMerlinEngine_aa12b209bb3efe9b01ddf1f6c864e938f}{Vacuum\+Merlin\+Engine}}.
+
+\mbox{\Hypertarget{classEngine_aaecbd5c7bac74bcccc4761c799a9b83d}\label{classEngine_aaecbd5c7bac74bcccc4761c799a9b83d}} 
+\index{Engine@{Engine}!getFuel@{getFuel}}
+\index{getFuel@{getFuel}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getFuel()}{getFuel()}}
+{\footnotesize\ttfamily double Engine\+::get\+Fuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns the fuel attribute. 
+
+Implements \mbox{\hyperlink{classRocket_af8c35dab87014f4ae9da84112deb2b0d}{Rocket}}.
+
+\mbox{\Hypertarget{classEngine_a17d990fb0d6541d839d881f07e483aa4}\label{classEngine_a17d990fb0d6541d839d881f07e483aa4}} 
+\index{Engine@{Engine}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily double Engine\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A Function to get the mass. 
+
+\begin{DoxyReturn}{Returns}
+mass of \mbox{\hyperlink{classEngine}{Engine}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRocket_a8f2b46d95d249625de66eb5086f52465}{Rocket}}.
+
+\mbox{\Hypertarget{classEngine_acc1d718c5b626d2237e2112a9bd11747}\label{classEngine_acc1d718c5b626d2237e2112a9bd11747}} 
+\index{Engine@{Engine}!isOn@{isOn}}
+\index{isOn@{isOn}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{isOn()}{isOn()}}
+{\footnotesize\ttfamily bool Engine\+::is\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A Function to check whether the engine is on or not. 
+
+\begin{DoxyReturn}{Returns}
+boolean true when engine is on and false when engine is off 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_a4e02c814dd5a32ad80c763eb5123154c}\label{classEngine_a4e02c814dd5a32ad80c763eb5123154c}} 
+\index{Engine@{Engine}!setFuel@{setFuel}}
+\index{setFuel@{setFuel}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setFuel()}{setFuel()}}
+{\footnotesize\ttfamily void Engine\+::set\+Fuel (\begin{DoxyParamCaption}\item[{double}]{fuel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set the fuel vairable
+
+
+\begin{DoxyParams}{Parameters}
+{\em fuel} & value to set the fuel attribute to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classRocket_afad5931cee031a0cf3092731251e9aca}{Rocket}}.
+
+\mbox{\Hypertarget{classEngine_a2c75f9e1b83d535e9e970f5c5c8661f0}\label{classEngine_a2c75f9e1b83d535e9e970f5c5c8661f0}} 
+\index{Engine@{Engine}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily void Engine\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+sets the weight of componenets stage\+List \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classRocket_a0dae3149276d65fba3263f8de400fc13}{Rocket}}.
+
+\mbox{\Hypertarget{classEngine_a237d2db8fb9a6085e900370ac5cfbc5a}\label{classEngine_a237d2db8fb9a6085e900370ac5cfbc5a}} 
+\index{Engine@{Engine}!switchOff@{switchOff}}
+\index{switchOff@{switchOff}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{switchOff()}{switchOff()}}
+{\footnotesize\ttfamily void Engine\+::switch\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A Function to switch the engine off. 
+
+This function will turn the engine off, if the engine is already turned off, it will ignore the request and display an appropriate message \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_ab21ad5ed09502d4c3672cb19c780c2b8}\label{classEngine_ab21ad5ed09502d4c3672cb19c780c2b8}} 
+\index{Engine@{Engine}!switchOn@{switchOn}}
+\index{switchOn@{switchOn}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{switchOn()}{switchOn()}}
+{\footnotesize\ttfamily void Engine\+::switch\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A Function to switch the engine on. 
+
+This function will turn the engine on, if the engine is already turned on, it will ignore the request and display an appropriate message \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine.\+h\item 
+Engine.\+cpp\end{DoxyCompactItemize}

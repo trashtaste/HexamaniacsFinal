@@ -1,0 +1,74 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+
+
+Inheritance diagram for State\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classState_a5621ca622d5d915e7b608b41da86164c}{State}} (string s)
+\item 
+virtual void \mbox{\hyperlink{classState_a1f94ce1f6db0f2aa4d775672de21d380}{handle\+Change}} (\mbox{\hyperlink{classSpaceShip}{Space\+Ship}} $\ast$ship)=0
+\item 
+virtual string \mbox{\hyperlink{classState_a5dc4ba7ba1874d60a61fdc503d31c6d0}{get\+State}} ()=0
+\item 
+virtual \mbox{\hyperlink{classState_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_afb8ff111e46fe68e4a608c7f6a3f8a8c}\label{classState_afb8ff111e46fe68e4a608c7f6a3f8a8c}} 
+string {\bfseries state}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classState}{State}} participant 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classState_a5621ca622d5d915e7b608b41da86164c}\label{classState_a5621ca622d5d915e7b608b41da86164c}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+Constructor of state class \mbox{\Hypertarget{classState_afab438d92b90dc18d194dbd9c9c8bab3}\label{classState_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_a5dc4ba7ba1874d60a61fdc503d31c6d0}\label{classState_a5dc4ba7ba1874d60a61fdc503d31c6d0}} 
+\index{State@{State}!getState@{getState}}
+\index{getState@{getState}!State@{State}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual string State\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+returns the state as a string 
+
+Implemented in \mbox{\hyperlink{classState1_a87b7c6127a31c1d3b3548dc81e9b04d8}{State1}}, \mbox{\hyperlink{classState2_aabf21a3f80f84af9ad2c1ed2d0b71cee}{State2}}, and \mbox{\hyperlink{classState3_a30a3abe9912bc5055cffbdaba4c48438}{State3}}.
+
+\mbox{\Hypertarget{classState_a1f94ce1f6db0f2aa4d775672de21d380}\label{classState_a1f94ce1f6db0f2aa4d775672de21d380}} 
+\index{State@{State}!handleChange@{handleChange}}
+\index{handleChange@{handleChange}!State@{State}}
+\doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
+{\footnotesize\ttfamily virtual void State\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpaceShip}{Space\+Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+pure virtual funvtion used to change from state to state 
+
+Implemented in \mbox{\hyperlink{classState1_a890a36862a792c8a5af05c654d277738}{State1}}, \mbox{\hyperlink{classState2_a4034f10b3b4f21e544f9583918b4fe0d}{State2}}, and \mbox{\hyperlink{classState3_a73736897ee88a710b9b85ca91a8705fd}{State3}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State.\+h\item 
+State.\+cpp\end{DoxyCompactItemize}

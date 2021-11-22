@@ -1,0 +1,105 @@
+\hypertarget{classDragon}{}\doxysection{Dragon Class Reference}
+\label{classDragon}\index{Dragon@{Dragon}}
+
+
+\mbox{\hyperlink{classDragon}{Dragon}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Dragon.\+h$>$}
+
+
+
+Inheritance diagram for Dragon\+:
+% FIG 0
+
+
+Collaboration diagram for Dragon\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDragon_a7f1d59c9ff76eb1f6fe0d9500af058b5}{Dragon}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classDragon_ae34521402d155aae936b65afbee22cf5}{$\sim$\+Dragon}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classDragon_ab542d119f96c1d799766ffdd3fd5345b}{get\+Weight}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract Function to get the weight. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classDragon_a8b8af2cb383a7471d7ff5711e8977196}{set\+Weight}} (double w)=0
+\begin{DoxyCompactList}\small\item\em Abstract Function to set the weight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDragon}{Dragon}} Class. 
+
+Defines the interface for \mbox{\hyperlink{classCrewDragon}{Crew\+Dragon}} amd \mbox{\hyperlink{classDragonSpaceCraft}{Dragon\+Space\+Craft}} which inherit and implement this class \begin{DoxyAuthor}{Author}
+Tshegofatsho Motlatle 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDragon_a7f1d59c9ff76eb1f6fe0d9500af058b5}\label{classDragon_a7f1d59c9ff76eb1f6fe0d9500af058b5}} 
+\index{Dragon@{Dragon}!Dragon@{Dragon}}
+\index{Dragon@{Dragon}!Dragon@{Dragon}}
+\doxysubsubsection{\texorpdfstring{Dragon()}{Dragon()}}
+{\footnotesize\ttfamily Dragon\+::\+Dragon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Instantiates a \mbox{\hyperlink{classDragon}{Dragon}} object \mbox{\Hypertarget{classDragon_ae34521402d155aae936b65afbee22cf5}\label{classDragon_ae34521402d155aae936b65afbee22cf5}} 
+\index{Dragon@{Dragon}!````~Dragon@{$\sim$Dragon}}
+\index{````~Dragon@{$\sim$Dragon}!Dragon@{Dragon}}
+\doxysubsubsection{\texorpdfstring{$\sim$Dragon()}{~Dragon()}}
+{\footnotesize\ttfamily Dragon\+::$\sim$\+Dragon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destroys a \mbox{\hyperlink{classDragon}{Dragon}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDragon_ab542d119f96c1d799766ffdd3fd5345b}\label{classDragon_ab542d119f96c1d799766ffdd3fd5345b}} 
+\index{Dragon@{Dragon}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Dragon@{Dragon}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily virtual double Dragon\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract Function to get the weight. 
+
+\begin{DoxyReturn}{Returns}
+cargo\+\_\+weight of the \mbox{\hyperlink{classCrewDragon}{Crew\+Dragon}} or Spacecraft 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpayload}{payload}}.
+
+
+
+Implemented in \mbox{\hyperlink{classCrewDragon_ad5071f91c2af842beb3d26daf1381828}{Crew\+Dragon}}, and \mbox{\hyperlink{classDragonSpaceCraft_a1025a45eec92a4716ccc514662fdc3de}{Dragon\+Space\+Craft}}.
+
+\mbox{\Hypertarget{classDragon_a8b8af2cb383a7471d7ff5711e8977196}\label{classDragon_a8b8af2cb383a7471d7ff5711e8977196}} 
+\index{Dragon@{Dragon}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Dragon@{Dragon}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily virtual void Dragon\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract Function to set the weight. 
+
+sets the cargo\+\_\+weight of the \mbox{\hyperlink{classCrewDragon}{Crew\+Dragon}} or Spacecraft 
+
+Implemented in \mbox{\hyperlink{classCrewDragon_a455e6bed96d86b867f75265044d0c119}{Crew\+Dragon}}, and \mbox{\hyperlink{classDragonSpaceCraft_ad6ab0e63928c999fad7e3e1a706dce53}{Dragon\+Space\+Craft}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dragon.\+h\item 
+Dragon.\+cpp\end{DoxyCompactItemize}

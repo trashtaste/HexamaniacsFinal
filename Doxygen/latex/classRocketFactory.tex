@@ -1,0 +1,81 @@
+\hypertarget{classRocketFactory}{}\doxysection{Rocket\+Factory Class Reference}
+\label{classRocketFactory}\index{RocketFactory@{RocketFactory}}
+
+
+\mbox{\hyperlink{classRocketFactory}{Rocket\+Factory}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Rocket\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Rocket\+Factory\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRocketFactory_a26bb9952f2b9d27731f64459d80d4fe6}{Rocket\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classRocketFactory_a42a4d8d33b264bac558a80e68ed5ac26}{$\sim$\+Rocket\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classRocket}{Rocket}} $\ast$ \mbox{\hyperlink{classRocketFactory_a457a131aa6ddb8bb28dc50c6550a92a1}{create\+Rocket}} ()=0
+\begin{DoxyCompactList}\small\item\em A Function to create a new \mbox{\hyperlink{classRocket}{Rocket}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classRocketFactory}{Rocket\+Factory}} Class. 
+
+\begin{DoxyAuthor}{Author}
+Tshegofatsho Motlatle The \mbox{\hyperlink{classRocketFactory}{Rocket\+Factory}} Class will provide an interface for the creation of \mbox{\hyperlink{classRocket}{Rocket}} Factories. \mbox{\hyperlink{classFalcon9Rocket}{Falcon9\+Rocket}} or \mbox{\hyperlink{classFalconHeavyRocket}{Falcon\+Heavy\+Rocket}} both inherit and implment this class. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRocketFactory_a26bb9952f2b9d27731f64459d80d4fe6}\label{classRocketFactory_a26bb9952f2b9d27731f64459d80d4fe6}} 
+\index{RocketFactory@{RocketFactory}!RocketFactory@{RocketFactory}}
+\index{RocketFactory@{RocketFactory}!RocketFactory@{RocketFactory}}
+\doxysubsubsection{\texorpdfstring{RocketFactory()}{RocketFactory()}}
+{\footnotesize\ttfamily Rocket\+Factory\+::\+Rocket\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Instantiates a \mbox{\hyperlink{classRocketFactory}{Rocket\+Factory}} object \mbox{\Hypertarget{classRocketFactory_a42a4d8d33b264bac558a80e68ed5ac26}\label{classRocketFactory_a42a4d8d33b264bac558a80e68ed5ac26}} 
+\index{RocketFactory@{RocketFactory}!````~RocketFactory@{$\sim$RocketFactory}}
+\index{````~RocketFactory@{$\sim$RocketFactory}!RocketFactory@{RocketFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$RocketFactory()}{~RocketFactory()}}
+{\footnotesize\ttfamily Rocket\+Factory\+::$\sim$\+Rocket\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destroys a \mbox{\hyperlink{classRocketFactory}{Rocket\+Factory}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRocketFactory_a457a131aa6ddb8bb28dc50c6550a92a1}\label{classRocketFactory_a457a131aa6ddb8bb28dc50c6550a92a1}} 
+\index{RocketFactory@{RocketFactory}!createRocket@{createRocket}}
+\index{createRocket@{createRocket}!RocketFactory@{RocketFactory}}
+\doxysubsubsection{\texorpdfstring{createRocket()}{createRocket()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classRocket}{Rocket}}$\ast$ Rocket\+Factory\+::create\+Rocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A Function to create a new \mbox{\hyperlink{classRocket}{Rocket}}. 
+
+\begin{DoxyReturn}{Returns}
+a new instance of either \mbox{\hyperlink{classFalcon9Rocket}{Falcon9\+Rocket}} or \mbox{\hyperlink{classFalconHeavyRocket}{Falcon\+Heavy\+Rocket}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFalcon9RocketFactory_aa056ef68310fc736474cbc3fca95ad6c}{Falcon9\+Rocket\+Factory}}, and \mbox{\hyperlink{classFalconHeavyRocketFactory_abcbd76f7c764d44ec27835b7bd88fc8d}{Falcon\+Heavy\+Rocket\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Rocket\+Factory.\+h\item 
+Rocket\+Factory.\+cpp\end{DoxyCompactItemize}

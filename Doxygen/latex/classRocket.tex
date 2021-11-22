@@ -1,0 +1,229 @@
+\hypertarget{classRocket}{}\doxysection{Rocket Class Reference}
+\label{classRocket}\index{Rocket@{Rocket}}
+
+
+Declares the interface for all objects in the composition.  
+
+
+
+
+{\ttfamily \#include $<$Rocket.\+h$>$}
+
+
+
+Inheritance diagram for Rocket\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRocket_a372a072f1c3a977c40938ba56202ecc6}{Rocket}} ()
+\item 
+virtual \mbox{\hyperlink{classRocket_ab0cbe044146250c3e592832bb4909ff9}{$\sim$\+Rocket}} ()
+\item 
+virtual void \mbox{\hyperlink{classRocket_ad8280154654e6a0ca1d4f7e77c2977da}{execute}} ()
+\item 
+virtual void \mbox{\hyperlink{classRocket_a2dcff356bfa8f254ab171319f3a4dfdf}{execute}} (int i)
+\item 
+virtual void \mbox{\hyperlink{classRocket_a0ac69614a71a468a0cd23df593d3121f}{remove}} ()
+\item 
+virtual void \mbox{\hyperlink{classRocket_a544e37b0194d55a59f4a9a1c63b368c7}{add}} (\mbox{\hyperlink{classRocket}{Rocket}} $\ast$rocket)
+\item 
+virtual void \mbox{\hyperlink{classRocket_afad5931cee031a0cf3092731251e9aca}{set\+Fuel}} (double fuel)=0
+\item 
+virtual double \mbox{\hyperlink{classRocket_af8c35dab87014f4ae9da84112deb2b0d}{get\+Fuel}} ()=0
+\item 
+virtual double \mbox{\hyperlink{classRocket_a8f2b46d95d249625de66eb5086f52465}{get\+Weight}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classRocket_a0dae3149276d65fba3263f8de400fc13}{set\+Weight}} (double w)=0
+\item 
+virtual \mbox{\hyperlink{classMemento}{Memento}} $\ast$ \mbox{\hyperlink{classRocket_a967474d08a68d026ca9e4d204c161d08}{drop\+Stage1}} ()
+\begin{DoxyCompactList}\small\item\em A function to create a backup of the \mbox{\hyperlink{classMemento}{Memento}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRocket_ab2c75d267bcd23ed16e0602d4619b0aa}{restore\+Stage1}} (\mbox{\hyperlink{classMemento}{Memento}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em A function to restore a backup of the \mbox{\hyperlink{classMemento}{Memento}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classRocket_a43653b35fc48b5080cfccccbf3bd69d4}{stage\+ID}}
+\item 
+bool \mbox{\hyperlink{classRocket_a16ceb3c93df5724f5eaf8965e6aedea0}{\+\_\+dislodged}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declares the interface for all objects in the composition. 
+
+defines interface for rockets and its components. defines default behaviours for adding, removing and executing components, the fuctionality of which can be redifined by the subclasses.
+
+\begin{DoxyAuthor}{Author}
+Thivessh Jhugroo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRocket_a372a072f1c3a977c40938ba56202ecc6}\label{classRocket_a372a072f1c3a977c40938ba56202ecc6}} 
+\index{Rocket@{Rocket}!Rocket@{Rocket}}
+\index{Rocket@{Rocket}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{Rocket()}{Rocket()}}
+{\footnotesize\ttfamily Rocket\+::\+Rocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the \mbox{\hyperlink{classRocket}{Rocket}} constructor takes no paramaters. \mbox{\Hypertarget{classRocket_ab0cbe044146250c3e592832bb4909ff9}\label{classRocket_ab0cbe044146250c3e592832bb4909ff9}} 
+\index{Rocket@{Rocket}!````~Rocket@{$\sim$Rocket}}
+\index{````~Rocket@{$\sim$Rocket}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$Rocket()}{~Rocket()}}
+{\footnotesize\ttfamily Rocket\+::$\sim$\+Rocket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Virtual destructor defers destruction method to subclasses. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRocket_a544e37b0194d55a59f4a9a1c63b368c7}\label{classRocket_a544e37b0194d55a59f4a9a1c63b368c7}} 
+\index{Rocket@{Rocket}!add@{add}}
+\index{add@{add}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Rocket\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRocket}{Rocket}} $\ast$}]{rocket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual add function that does nothing by default ,to be re-\/defined by the \mbox{\hyperlink{classFalcon9Rocket}{Falcon9\+Rocket}} and \mbox{\hyperlink{classFalconHeavyRocket}{Falcon\+Heavy\+Rocket}} classes. 
+\begin{DoxyParams}{Parameters}
+{\em rocket} & The rocket-\/type attribute to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classFalcon9Rocket_a34af951a367db2b542e125eb977b6d45}{Falcon9\+Rocket}}, \mbox{\hyperlink{classFalconHeavyRocket_a350a540b20b86277fe16101c3433a047}{Falcon\+Heavy\+Rocket}}, \mbox{\hyperlink{classCore_acf241ec9f4f14cf16c06bde40943b003}{Core}}, and \mbox{\hyperlink{classStage_aa17abbebbb23727a6adb9f9ea2cec985}{Stage}}.
+
+\mbox{\Hypertarget{classRocket_a967474d08a68d026ca9e4d204c161d08}\label{classRocket_a967474d08a68d026ca9e4d204c161d08}} 
+\index{Rocket@{Rocket}!dropStage1@{dropStage1}}
+\index{dropStage1@{dropStage1}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{dropStage1()}{dropStage1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMemento}{Memento}} $\ast$ Rocket\+::drop\+Stage1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A function to create a backup of the \mbox{\hyperlink{classMemento}{Memento}}. 
+
+Creates backup 
+
+Reimplemented in \mbox{\hyperlink{classFalcon9Rocket_a05c9b276ba409261e6477f890775d2d1}{Falcon9\+Rocket}}, and \mbox{\hyperlink{classFalconHeavyRocket_accdcdfa1bbccc11c73609742a75f7325}{Falcon\+Heavy\+Rocket}}.
+
+\mbox{\Hypertarget{classRocket_ad8280154654e6a0ca1d4f7e77c2977da}\label{classRocket_ad8280154654e6a0ca1d4f7e77c2977da}} 
+\index{Rocket@{Rocket}!execute@{execute}}
+\index{execute@{execute}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rocket\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual execute function that does nothing by default ,to be re-\/defined by the \mbox{\hyperlink{classFalcon9Rocket}{Falcon9\+Rocket}} and \mbox{\hyperlink{classFalconHeavyRocket}{Falcon\+Heavy\+Rocket}} classes. 
+
+Reimplemented in \mbox{\hyperlink{classEngine_ad85f4f9faf06e55c18ca57c4a69aeef0}{Engine}}, \mbox{\hyperlink{classCore_ac3c62341d527cfd8d4a1d8abe79bf5eb}{Core}}, \mbox{\hyperlink{classMerlinEngine_a064c21e00f8db33bf1cba7a60cf440fa}{Merlin\+Engine}}, \mbox{\hyperlink{classStage_a1043db4e4691dbff3f0746cdd029353b}{Stage}}, \mbox{\hyperlink{classVacuumMerlinEngine_aa12b209bb3efe9b01ddf1f6c864e938f}{Vacuum\+Merlin\+Engine}}, \mbox{\hyperlink{classFalcon9Rocket_a34e0ef038ba531b9bc38a42f7c2a2f99}{Falcon9\+Rocket}}, and \mbox{\hyperlink{classFalconHeavyRocket_a1671c8b6b2d61366df341fbbb4b88f78}{Falcon\+Heavy\+Rocket}}.
+
+\mbox{\Hypertarget{classRocket_a2dcff356bfa8f254ab171319f3a4dfdf}\label{classRocket_a2dcff356bfa8f254ab171319f3a4dfdf}} 
+\index{Rocket@{Rocket}!execute@{execute}}
+\index{execute@{execute}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rocket\+::execute (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual execute function that does nothing by default ,to be re-\/defined by the \mbox{\hyperlink{classFalcon9Rocket}{Falcon9\+Rocket}} and \mbox{\hyperlink{classFalconHeavyRocket}{Falcon\+Heavy\+Rocket}} classes. 
+\begin{DoxyParams}{Parameters}
+{\em i} & index to be used by subclasses \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classFalcon9Rocket_a01ca7801494dc117fb79b486f525af89}{Falcon9\+Rocket}}, and \mbox{\hyperlink{classFalconHeavyRocket_a4f13892816d13f2b767d594eda22163d}{Falcon\+Heavy\+Rocket}}.
+
+\mbox{\Hypertarget{classRocket_af8c35dab87014f4ae9da84112deb2b0d}\label{classRocket_af8c35dab87014f4ae9da84112deb2b0d}} 
+\index{Rocket@{Rocket}!getFuel@{getFuel}}
+\index{getFuel@{getFuel}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{getFuel()}{getFuel()}}
+{\footnotesize\ttfamily virtual double Rocket\+::get\+Fuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+returns the fuel attribute. 
+
+Implemented in \mbox{\hyperlink{classFalconHeavyRocket_a47ecc55e16ee2a960859281cc86fe8da}{Falcon\+Heavy\+Rocket}}, \mbox{\hyperlink{classEngine_aaecbd5c7bac74bcccc4761c799a9b83d}{Engine}}, \mbox{\hyperlink{classFalcon9Rocket_a7907608a4c956774753dffcfde49873f}{Falcon9\+Rocket}}, \mbox{\hyperlink{classCore_afa372d56c2816cbb6a939b56d108cd90}{Core}}, and \mbox{\hyperlink{classStage_a5495951a915100d0bb18eaed9e726696}{Stage}}.
+
+\mbox{\Hypertarget{classRocket_a8f2b46d95d249625de66eb5086f52465}\label{classRocket_a8f2b46d95d249625de66eb5086f52465}} 
+\index{Rocket@{Rocket}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily virtual double Rocket\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+returns total weight of all the stages in the stage\+List \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFalconHeavyRocket_a915a878a108f961d54360c97c6354f49}{Falcon\+Heavy\+Rocket}}, \mbox{\hyperlink{classCore_aecb5390840ea5afc0ec4c7a2f66105ed}{Core}}, \mbox{\hyperlink{classStage_a3c5b25e3ff77101a55e2ea533594282b}{Stage}}, \mbox{\hyperlink{classEngine_a17d990fb0d6541d839d881f07e483aa4}{Engine}}, and \mbox{\hyperlink{classFalcon9Rocket_a63ff47587b26802799d1780d3d42f82f}{Falcon9\+Rocket}}.
+
+\mbox{\Hypertarget{classRocket_a0ac69614a71a468a0cd23df593d3121f}\label{classRocket_a0ac69614a71a468a0cd23df593d3121f}} 
+\index{Rocket@{Rocket}!remove@{remove}}
+\index{remove@{remove}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Rocket\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual remove function that does nothing by default ,to be re-\/defined by the \mbox{\hyperlink{classFalcon9Rocket}{Falcon9\+Rocket}} and \mbox{\hyperlink{classFalconHeavyRocket}{Falcon\+Heavy\+Rocket}} classes. 
+
+Reimplemented in \mbox{\hyperlink{classFalcon9Rocket_a6fc09199a113da92224079d1cb3f9ef5}{Falcon9\+Rocket}}, \mbox{\hyperlink{classFalconHeavyRocket_ad12906d4b8d35d7de26b17a9c7924eef}{Falcon\+Heavy\+Rocket}}, \mbox{\hyperlink{classCore_ac2591806560c88bc38c4a74545d38554}{Core}}, and \mbox{\hyperlink{classStage_a04a94271fa465e10df552589fe6a25d8}{Stage}}.
+
+\mbox{\Hypertarget{classRocket_ab2c75d267bcd23ed16e0602d4619b0aa}\label{classRocket_ab2c75d267bcd23ed16e0602d4619b0aa}} 
+\index{Rocket@{Rocket}!restoreStage1@{restoreStage1}}
+\index{restoreStage1@{restoreStage1}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{restoreStage1()}{restoreStage1()}}
+{\footnotesize\ttfamily void Rocket\+::restore\+Stage1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMemento}{Memento}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A function to restore a backup of the \mbox{\hyperlink{classMemento}{Memento}}. 
+
+Restores backup 
+
+Reimplemented in \mbox{\hyperlink{classFalcon9Rocket_ac77f32f3696bdcac4fc969cacb3b73f0}{Falcon9\+Rocket}}, and \mbox{\hyperlink{classFalconHeavyRocket_a85f263b18e365c8724b670e566ca4122}{Falcon\+Heavy\+Rocket}}.
+
+\mbox{\Hypertarget{classRocket_afad5931cee031a0cf3092731251e9aca}\label{classRocket_afad5931cee031a0cf3092731251e9aca}} 
+\index{Rocket@{Rocket}!setFuel@{setFuel}}
+\index{setFuel@{setFuel}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{setFuel()}{setFuel()}}
+{\footnotesize\ttfamily virtual void Rocket\+::set\+Fuel (\begin{DoxyParamCaption}\item[{double}]{fuel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+set the fuel vairable
+
+
+\begin{DoxyParams}{Parameters}
+{\em fuel} & value to set the fuel attribute to \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFalconHeavyRocket_ae9d462ccd39f579a88bcd0ce2a0d27c3}{Falcon\+Heavy\+Rocket}}, \mbox{\hyperlink{classEngine_a4e02c814dd5a32ad80c763eb5123154c}{Engine}}, \mbox{\hyperlink{classFalcon9Rocket_a41c6db55edd5b3e27b820c83dd81dd38}{Falcon9\+Rocket}}, \mbox{\hyperlink{classCore_aac5ab518b6163139d22dfc0e47142e48}{Core}}, and \mbox{\hyperlink{classStage_a2d786c5faa766256b4b4692527a9267e}{Stage}}.
+
+\mbox{\Hypertarget{classRocket_a0dae3149276d65fba3263f8de400fc13}\label{classRocket_a0dae3149276d65fba3263f8de400fc13}} 
+\index{Rocket@{Rocket}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily virtual void Rocket\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+returns sets the weight of componenets stage\+List \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFalconHeavyRocket_ae022c6e422259b0ff00e02bf947d1298}{Falcon\+Heavy\+Rocket}}, \mbox{\hyperlink{classCore_af206a0c62fafd19ebd4dfdeebf62e293}{Core}}, \mbox{\hyperlink{classStage_a2819e93d79ff6997d81f334010d4034b}{Stage}}, \mbox{\hyperlink{classEngine_a2c75f9e1b83d535e9e970f5c5c8661f0}{Engine}}, and \mbox{\hyperlink{classFalcon9Rocket_a6e7506047da7372d71775b4e96808f65}{Falcon9\+Rocket}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRocket_a16ceb3c93df5724f5eaf8965e6aedea0}\label{classRocket_a16ceb3c93df5724f5eaf8965e6aedea0}} 
+\index{Rocket@{Rocket}!\_dislodged@{\_dislodged}}
+\index{\_dislodged@{\_dislodged}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{\_dislodged}{\_dislodged}}
+{\footnotesize\ttfamily bool Rocket\+::\+\_\+dislodged}
+
+\+\_\+dislodged indicate whether stage1 of the rocket launch sequence is still attached \mbox{\Hypertarget{classRocket_a43653b35fc48b5080cfccccbf3bd69d4}\label{classRocket_a43653b35fc48b5080cfccccbf3bd69d4}} 
+\index{Rocket@{Rocket}!stageID@{stageID}}
+\index{stageID@{stageID}!Rocket@{Rocket}}
+\doxysubsubsection{\texorpdfstring{stageID}{stageID}}
+{\footnotesize\ttfamily int Rocket\+::stage\+ID}
+
+ID to indicate the stage 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Rocket.\+h\item 
+Rocket.\+cpp\end{DoxyCompactItemize}

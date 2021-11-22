@@ -1,0 +1,78 @@
+\hypertarget{classEngineFactory}{}\doxysection{Engine\+Factory Class Reference}
+\label{classEngineFactory}\index{EngineFactory@{EngineFactory}}
+
+
+\mbox{\hyperlink{classEngineFactory}{Engine\+Factory}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Engine\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Engine\+Factory\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEngineFactory_a5bfd45393eb692ce21baf7a0c24ceba4}{Engine\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEngineFactory_a28bcb9a9c87b2ce226f1f181aad05d34}{$\sim$\+Engine\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEngine}{Engine}} $\ast$ \mbox{\hyperlink{classEngineFactory_afd413d554ffb1314c70ecbb75407ba2d}{create\+Engine}} (double weight, double fuel)=0
+\begin{DoxyCompactList}\small\item\em A Function to create a new \mbox{\hyperlink{classEngine}{Engine}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEngineFactory}{Engine\+Factory}} Class. 
+
+The \mbox{\hyperlink{classEngineFactory}{Engine\+Factory}} Class will provide an interface for the creation of engine Factories. \mbox{\hyperlink{classMerlinEngineFactory}{Merlin\+Engine\+Factory}} and \mbox{\hyperlink{classVacuumMerlinEngineFactory}{Vacuum\+Merlin\+Engine\+Factory}} both inherit and implment it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngineFactory_a5bfd45393eb692ce21baf7a0c24ceba4}\label{classEngineFactory_a5bfd45393eb692ce21baf7a0c24ceba4}} 
+\index{EngineFactory@{EngineFactory}!EngineFactory@{EngineFactory}}
+\index{EngineFactory@{EngineFactory}!EngineFactory@{EngineFactory}}
+\doxysubsubsection{\texorpdfstring{EngineFactory()}{EngineFactory()}}
+{\footnotesize\ttfamily Engine\+Factory\+::\+Engine\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Instantiates a \mbox{\hyperlink{classEngineFactory}{Engine\+Factory}} object \mbox{\Hypertarget{classEngineFactory_a28bcb9a9c87b2ce226f1f181aad05d34}\label{classEngineFactory_a28bcb9a9c87b2ce226f1f181aad05d34}} 
+\index{EngineFactory@{EngineFactory}!````~EngineFactory@{$\sim$EngineFactory}}
+\index{````~EngineFactory@{$\sim$EngineFactory}!EngineFactory@{EngineFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$EngineFactory()}{~EngineFactory()}}
+{\footnotesize\ttfamily Engine\+Factory\+::$\sim$\+Engine\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destroys a \mbox{\hyperlink{classEngineFactory}{Engine\+Factory}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngineFactory_afd413d554ffb1314c70ecbb75407ba2d}\label{classEngineFactory_afd413d554ffb1314c70ecbb75407ba2d}} 
+\index{EngineFactory@{EngineFactory}!createEngine@{createEngine}}
+\index{createEngine@{createEngine}!EngineFactory@{EngineFactory}}
+\doxysubsubsection{\texorpdfstring{createEngine()}{createEngine()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEngine}{Engine}}$\ast$ Engine\+Factory\+::create\+Engine (\begin{DoxyParamCaption}\item[{double}]{weight,  }\item[{double}]{fuel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A Function to create a new \mbox{\hyperlink{classEngine}{Engine}}. 
+
+\begin{DoxyReturn}{Returns}
+a new instance of either \mbox{\hyperlink{classMerlinEngine}{Merlin\+Engine}} or \mbox{\hyperlink{classVacuumMerlinEngine}{Vacuum\+Merlin\+Engine}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classMerlinEngineFactory_a60cad26a99b2b34dd824426ab2066430}{Merlin\+Engine\+Factory}}, and \mbox{\hyperlink{classVacuumMerlinEngineFactory_a9ffb4e17e25df347e4052621eca508e0}{Vacuum\+Merlin\+Engine\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine\+Factory.\+h\item 
+Engine\+Factory.\+cpp\end{DoxyCompactItemize}

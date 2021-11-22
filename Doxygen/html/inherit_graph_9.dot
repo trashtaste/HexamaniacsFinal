@@ -1,0 +1,22 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Rocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRocket.html",tooltip="Declares the interface for all objects in the composition."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCore.html",tooltip="implements rocket interface and acts as a composite participant"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Engine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEngine.html",tooltip="defines engine interface and acts as the abstract/leaf participant"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MerlinEngine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMerlinEngine.html",tooltip="implements engine interface and acts as the concrete/leaf participant"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="VacuumMerlinEngine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVacuumMerlinEngine.html",tooltip="implements engine interface and acts as the concrete/leaf participant"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Falcon9Rocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFalcon9Rocket.html",tooltip="implements functionality and acts as the compoiste participant"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FalconHeavyRocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFalconHeavyRocket.html",tooltip="implements functionality and acts as the compoiste participant"];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Stage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStage.html",tooltip="implements functionality and acts as the compoiste participant"];
+}
